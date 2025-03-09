@@ -108,7 +108,6 @@ def getApproved(_tokenId: uint256) -> address:
     assert self.idToOwner[_tokenId] != empty(address)
     return self.idToApprovals[_tokenId]
 
-
 @view
 @external
 def isApprovedForAll(_owner: address, _operator: address) -> bool:
